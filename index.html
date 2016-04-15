@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>slapgame</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class= "panel" id= "player-panel">
+        <div class="panel-heading">
+            <div class="progress">
+                <div id='healthbar'class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                    
+                </div>
+            </div>
+        </div>
+        <div id= "player-panel" class= "panel" >
+            <img src="http://www.clker.com/cliparts/h/D/5/O/s/2/stick-figure-black-md.png" width="200px">
+        </div>
+        <div class="panel-footer">
+            <button onclick="slap()" class='btn btn-primary'>SLAP</button>
+            <button onclick="kick()" class='btn btn-primary'>KICK</button>
+            <button onclick="punch()" class='btn btn-primary'>PUNCH</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
