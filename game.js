@@ -8,9 +8,9 @@ var health = 100
     this.description = description;
   }
 var items = {
-  shield: new obj("Shield", 4, "This is an awesome shield!"),
-  vest: new obj('Vest', 3 , "This is a great vest"),
-  helmet: new obj('Helmet', 2, "This is a sweet helmet"),
+  shield: new obj("Shield", 2, "This is an awesome shield!"),
+  vest: new obj('Vest', 2 , "This is a great vest"),
+  helmet: new obj('Helmet', 1, "This is a sweet helmet"),
   missed: new obj('Missed',1, "Ha Ha you missed")
 }
   
@@ -18,14 +18,14 @@ var items = {
 
 function slap() {
  var modifier= player.weapons()
-  health=health-1+ modifier;
+  health=health-2+ modifier;
   healthBar();
   update();
 }
 
 function kick() {
   var modifier= player.weapons()
-  health=health-4+ modifier;
+  health=health-2+ modifier;
   healthBar();
   update();
 }
