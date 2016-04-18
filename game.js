@@ -38,15 +38,15 @@ function punch() {
 }
 
 function update() {
-  if (health <= 30) {
+  if (health <= 75) {
     document.getElementById("player-panel").classList.add("panel-danger")
-    alert('Level Low')
+    alert('Level Low');
   }
   else {
     document.getElementById("player-panel").classList.remove("panel-danger")
   }
-
 }
+
   
   var player = {
     puller:[],
